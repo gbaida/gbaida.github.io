@@ -3,166 +3,182 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>gustavo baida.</title>
-  <meta name="description" content="Senior Data Analyst — turning complex data into decisions that stick." />
+  <title>Gustavo Baida - Data Analyst</title>
+  <meta name="description" content="Curiosity Driven Data Analyst" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Linux+Libertine+Display&family=Georgia&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav id="nav">
-    <span class="logo">gb.</span>
-    <div class="nav-links">
-      <a href="#projetos"><span class="nav-num">01</span> <span data-i18n="nav1">projetos</span></a>
-      <a href="#perfil"><span class="nav-num">02</span> <span data-i18n="nav2">perfil</span></a>
+  <!-- WIKI HEADER BAR -->
+  <div id="wiki-bar">
+    <span class="wiki-logo">gb.</span>
+    <div class="wiki-bar-links">
+      <button id="lang-toggle">EN</button>
     </div>
-    <button id="lang-toggle" aria-label="Toggle language">EN</button>
-  </nav>
+  </div>
 
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-inner fade-in">
-      <h1>gustavo baida.</h1>
-      <p class="tagline" data-i18n="tagline">Analista de Dados movido por curiosidade</p>
-      <p class="bio" data-i18n="bio">Analista de Dados Sênior com mais de 10 anos de experiência em TI, transformando dados complexos em decisões úteis. Eu construo dashboards, faço automações de workflows e comunico insights de maneiras que geram ações. Me sinto confortável escrevendo queries em SQL, montando apresentações ou fazendo reuniões em qualquer fuso horário pra entender as necessidades de dados do negócio. Trabalho com Power BI, Bigquery, Python, Excel e atualmente estou experimentando com o Claude pra aprimorar e acelerar minhas habilidades em todas essas áreas.</p>
-      <div class="contact-links">
-        <a href="https://github.com/gbaida" target="_blank" rel="noopener">↗ GitHub</a>
-        <a href="https://www.linkedin.com/in/gustavo-baida/" target="_blank" rel="noopener">↗ LinkedIn</a>
-        <a href="mailto:gustavobaida@gmail.com">↗ email</a>
+  <div id="wiki-page">
+
+    <!-- ARTICLE TITLE -->
+    <div id="article-header">
+      <h1 id="article-title">Gustavo Baida</h1>
+      <p class="article-subtitle" data-i18n="tagline">Analista de Dados movido por curiosidade</p>
+      <div id="article-meta">
+        <span class="wiki-notice" data-i18n="notice">Este artigo é sobre um analista de dados. Para outros usos, veja <em>dados (desambiguação)</em>.</span>
       </div>
     </div>
-  </section>
 
-  <!-- PROJECTS -->
-  <section id="projetos" class="section">
-    <h2 class="section-label fade-in">
-      <span class="mono section-num">01</span>
-      <span data-i18n="nav1">projetos</span>
-    </h2>
+    <div id="article-body">
 
-    <div class="projects-grid">
+      <!-- INFOBOX -->
+      <aside id="infobox">
+        <div class="infobox-title" data-i18n="infobox-title">Gustavo Baida</div>
+        <div class="infobox-subtitle" data-i18n="infobox-subtitle">Analista de Dados Sênior</div>
+        <table class="infobox-table">
+          <tr>
+            <th data-i18n="ib-exp">Experiência</th>
+            <td data-i18n="ib-exp-val">10+ anos em TI</td>
+          </tr>
+          <tr>
+            <th data-i18n="ib-stack">Stack</th>
+            <td>Python · SQL · Power BI · BigQuery</td>
+          </tr>
+          <tr>
+            <th data-i18n="ib-tools">Ferramentas</th>
+            <td>Streamlit · dbt · Airflow · Excel</td>
+          </tr>
+          <tr>
+            <th data-i18n="ib-ai">IA</th>
+            <td>Claude / Agents</td>
+          </tr>
+          <tr>
+            <th data-i18n="ib-links">Links</th>
+            <td>
+              <a href="https://github.com/gbaida" target="_blank" rel="noopener">GitHub</a> ·
+              <a href="https://www.linkedin.com/in/gustavo-baida/" target="_blank" rel="noopener">LinkedIn</a> ·
+              <a href="mailto:gustavobaida@gmail.com">Email</a>
+            </td>
+          </tr>
+        </table>
+      </aside>
 
-      <!-- Featured -->
-      <div class="card card--featured fade-in">
-        <div class="card-header">
-          <span class="card-name mono">clubber analytics</span>
-          <span class="badge badge--active" data-i18n="badge-active">ativo</span>
-        </div>
-        <p class="card-desc" data-i18n="proj1-desc">Dashboard interativo de análise de ingressos construído com Streamlit. Visualização de vendas, receita e dados de público para eventos ao vivo.</p>
-        <div class="card-footer">
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">Streamlit</span>
-            <span class="tag">Data Viz</span>
-          </div>
-          <div class="card-links">
-            <a href="https://clubber-analytics.streamlit.app/" target="_blank" rel="noopener" class="card-link">↗ App</a>
-            <a href="https://github.com/gbaida/shotgun-dashboard" target="_blank" rel="noopener" class="card-link">↗ GitHub</a>
-          </div>
-        </div>
+      <!-- TABLE OF CONTENTS -->
+      <div id="toc">
+        <div class="toc-title" data-i18n="toc-title">Conteúdo</div>
+        <ol>
+          <li><a href="#sobre" data-i18n="nav1">Sobre</a></li>
+          <li><a href="#projetos" data-i18n="nav2">Projetos</a>
+            <ol>
+              <li><a href="#proj-clubber">Clubber Analytics</a></li>
+              <li><a href="#proj-pib">RelacaoPIBvsEmissoes</a></li>
+              <li><a href="#proj-twitter">TwitterUrnaEletronica</a></li>
+              <li><a href="#proj-enem">AnaliseDesigualdadesEnem</a></li>
+            </ol>
+          </li>
+          <li><a href="#habilidades" data-i18n="nav3">Habilidades</a></li>
+        </ol>
       </div>
 
-      <div class="card fade-in">
-        <div class="card-header">
-          <span class="card-name mono">RelacaoPIBvsEmissoes</span>
-          <span class="badge badge--archived" data-i18n="badge-archived">arquivado</span>
-        </div>
-        <p class="card-desc" data-i18n="proj2-desc">Análise econométrica da relação entre PIB e emissões de gases de efeito estufa. Estudo de dados ambientais com Python e Jupyter.</p>
-        <div class="card-footer">
-          <div class="tags">
-            <span class="tag">Jupyter</span>
-            <span class="tag">Econometria</span>
-          </div>
-          <a href="https://github.com/gbaida/RelacaoPIBvsEmissoes" target="_blank" rel="noopener" class="card-link">↗ GitHub</a>
-        </div>
-      </div>
+      <!-- SECTION: SOBRE -->
+      <section id="sobre">
+        <h2>
+          <span data-i18n="nav1">Sobre</span>
+          <a class="edit-link" href="https://github.com/gbaida" target="_blank" rel="noopener" data-i18n="edit">[editar]</a>
+        </h2>
+        <p data-i18n="bio">Analista de Dados Sênior com mais de 10 anos de experiência em TI, transformando dados complexos em decisões úteis. Eu construo dashboards, faço automações de workflows e comunico insights de maneiras que geram ações. Me sinto confortável escrevendo queries em SQL, montando apresentações ou fazendo reuniões em qualquer fuso horário pra entender as necessidades de dados do negócio. Trabalho com Power BI, Bigquery, Python, Excel e atualmente estou experimentando com o Claude pra aprimorar e acelerar minhas habilidades em todas essas áreas.</p>
+      </section>
 
-<div class="card fade-in">
-        <div class="card-header">
-          <span class="card-name mono">TwitterUrnaEletronica</span>
-          <span class="badge badge--archived" data-i18n="badge-archived">arquivado</span>
+      <!-- SECTION: PROJETOS -->
+      <section id="projetos">
+        <h2>
+          <span data-i18n="nav2">Projetos</span>
+          <a class="edit-link" href="https://github.com/gbaida" target="_blank" rel="noopener" data-i18n="edit">[editar]</a>
+        </h2>
+
+        <div class="project-entry" id="proj-clubber">
+          <h3>Clubber Analytics <span class="proj-badge proj-badge--active" data-i18n="badge-active">ativo</span></h3>
+          <p data-i18n="proj1-desc">Dashboard interativo de análise de ingressos construído com Streamlit. Visualização de vendas, receita e dados de público para eventos ao vivo.</p>
+          <p class="proj-links">
+            <a href="https://clubber-analytics.streamlit.app/" target="_blank" rel="noopener" data-i18n="link-app">↗ Ver aplicação</a> ·
+            <a href="https://github.com/gbaida/shotgun-dashboard" target="_blank" rel="noopener">↗ GitHub</a>
+          </p>
+          <dl class="proj-meta">
+            <dt data-i18n="proj-tech">Tecnologias</dt><dd>Python, Streamlit, Data Viz</dd>
+          </dl>
         </div>
-        <p class="card-desc" data-i18n="proj4-desc">Análise de NLP do debate em torno da urna eletrônica no Twitter. Mapeamento de sentimento e volume de discussão em período eleitoral.</p>
-        <div class="card-footer">
-          <div class="tags">
-            <span class="tag">NLP</span>
-            <span class="tag">Python</span>
-          </div>
-          <a href="https://github.com/gbaida/TwitterUrnaEletronica" target="_blank" rel="noopener" class="card-link">↗ GitHub</a>
+
+        <div class="project-entry" id="proj-pib">
+          <h3>RelacaoPIBvsEmissoes <span class="proj-badge proj-badge--archived" data-i18n="badge-archived">arquivado</span></h3>
+          <p data-i18n="proj2-desc">Análise econométrica da relação entre PIB e emissões de gases de efeito estufa. Estudo de dados ambientais com Python e Jupyter.</p>
+          <p class="proj-links"><a href="https://github.com/gbaida/RelacaoPIBvsEmissoes" target="_blank" rel="noopener">↗ GitHub</a></p>
+          <dl class="proj-meta">
+            <dt data-i18n="proj-tech">Tecnologias</dt><dd>Python, Jupyter, Econometria</dd>
+          </dl>
         </div>
-      </div>
 
-      <div class="card fade-in">
-        <div class="card-header">
-          <span class="card-name mono">AnaliseDesigualdadesEnem</span>
-          <span class="badge badge--archived" data-i18n="badge-archived">arquivado</span>
+        <div class="project-entry" id="proj-twitter">
+          <h3>TwitterUrnaEletronica <span class="proj-badge proj-badge--archived" data-i18n="badge-archived">arquivado</span></h3>
+          <p data-i18n="proj4-desc">Análise de NLP do debate em torno da urna eletrônica no Twitter. Mapeamento de sentimento e volume de discussão em período eleitoral.</p>
+          <p class="proj-links"><a href="https://github.com/gbaida/TwitterUrnaEletronica" target="_blank" rel="noopener">↗ GitHub</a></p>
+          <dl class="proj-meta">
+            <dt data-i18n="proj-tech">Tecnologias</dt><dd>Python, NLP</dd>
+          </dl>
         </div>
-        <p class="card-desc" data-i18n="proj5-desc">Análise do impacto de desigualdades socioeconômicas no desempenho de alunos no ENEM 2021. Estudo com dados do INEP.</p>
-        <div class="card-footer">
-          <div class="tags">
-            <span class="tag">Pandas</span>
-            <span class="tag">Estatística</span>
-          </div>
-          <a href="https://github.com/gbaida/AnaliseDesigualdadesEnem2021" target="_blank" rel="noopener" class="card-link">↗ GitHub</a>
+
+        <div class="project-entry" id="proj-enem">
+          <h3>AnaliseDesigualdadesEnem <span class="proj-badge proj-badge--archived" data-i18n="badge-archived">arquivado</span></h3>
+          <p data-i18n="proj5-desc">Análise do impacto de desigualdades socioeconômicas no desempenho de alunos no ENEM 2021. Estudo com dados do INEP.</p>
+          <p class="proj-links"><a href="https://github.com/gbaida/AnaliseDesigualdadesEnem2021" target="_blank" rel="noopener">↗ GitHub</a></p>
+          <dl class="proj-meta">
+            <dt data-i18n="proj-tech">Tecnologias</dt><dd>Python, Pandas, Estatística</dd>
+          </dl>
         </div>
-      </div>
 
-    </div>
-  </section>
+      </section>
 
-  <!-- PROFILE -->
-  <section id="perfil" class="section">
-    <h2 class="section-label fade-in">
-      <span class="mono section-num">02</span>
-      <span data-i18n="nav2">perfil</span>
-    </h2>
+      <!-- SECTION: HABILIDADES -->
+      <section id="habilidades">
+        <h2>
+          <span data-i18n="nav3">Habilidades</span>
+          <a class="edit-link" href="https://github.com/gbaida" target="_blank" rel="noopener" data-i18n="edit">[editar]</a>
+        </h2>
+        <table class="wiki-table">
+          <thead>
+            <tr>
+              <th data-i18n="skill-data">Dados</th>
+              <th data-i18n="skill-viz">Visualização</th>
+              <th data-i18n="skill-tools">Ferramentas</th>
+              <th data-i18n="skill-cloud">Cloud</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Python</td><td>Power BI</td><td>dbt</td><td>Google Cloud</td>
+            </tr>
+            <tr>
+              <td>SQL</td><td>Streamlit</td><td>Airflow</td><td>BigQuery</td>
+            </tr>
+            <tr>
+              <td>BigQuery</td><td>Tableau</td><td>Git / GitHub</td><td>AWS</td>
+            </tr>
+            <tr>
+              <td>Pandas</td><td>Matplotlib</td><td>Claude / Agents</td><td></td>
+            </tr>
+            <tr>
+              <td>scikit-learn</td><td>Looker</td><td>VS Code</td><td></td>
+            </tr>
+            <tr>
+              <td>Jupyter</td><td>Excel</td><td></td><td></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <div class="skills-grid fade-in">
-      <div class="skill-group">
-        <h3 class="mono skill-heading" data-i18n="skill-data">dados</h3>
-        <ul>
-          <li>Python</li>
-          <li>SQL</li>
-          <li>BigQuery</li>
-          <li>Pandas</li>
-          <li>scikit-learn</li>
-          <li>Jupyter</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h3 class="mono skill-heading" data-i18n="skill-viz">visualização</h3>
-        <ul>
-          <li>Power BI</li>
-          <li>Streamlit</li>
-          <li>Tableau</li>
-          <li>Matplotlib</li>
-          <li>Looker</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h3 class="mono skill-heading" data-i18n="skill-tools">ferramentas</h3>
-        <ul>
-          <li>dbt</li>
-          <li>Airflow</li>
-          <li>Git / GitHub</li>
-          <li>Claude / Agents</li>
-          <li>VS Code</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h3 class="mono skill-heading" data-i18n="skill-cloud">cloud</h3>
-        <ul>
-          <li>Google Cloud</li>
-          <li>BigQuery</li>
-          <li>AWS</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
+    </div><!-- /article-body -->
+  </div><!-- /wiki-page -->
 
   <script src="script.js"></script>
 </body>
