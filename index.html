@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gustavo baida.</title>
+  <meta name="description" content="Senior Data Analyst — turning complex data into decisions that stick." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <span class="logo">gb.</span>
+    <div class="nav-links">
+      <a href="#projetos"><span class="nav-num">01</span> <span data-i18n="nav1">projetos</span></a>
+      <a href="#perfil"><span class="nav-num">02</span> <span data-i18n="nav2">perfil</span></a>
+      <a href="#sobre"><span class="nav-num">03</span> <span data-i18n="nav3">sobre</span></a>
+    </div>
+    <button id="lang-toggle" aria-label="Toggle language">EN</button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner fade-in">
+      <h1>gustavo baida.</h1>
+      <p class="tagline" data-i18n="tagline">analista de dados sênior — transformando dados em decisões que ficam.</p>
+      <div class="hero-status">
+        <span class="status-dot"></span>
+        <span class="mono" data-i18n="status">disponível para oportunidades</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projetos" class="section">
+    <h2 class="section-label fade-in">
+      <span class="mono section-num">01</span>
+      <span data-i18n="nav1">projetos</span>
+    </h2>
+
+    <div class="projects-grid">
+
+      <!-- Featured -->
+      <div class="card card--featured fade-in">
+        <div class="card-header">
+          <span class="card-name mono">shotgun-dashboard</span>
+          <span class="badge badge--active" data-i18n="badge-active">ativo</span>
+        </div>
+        <p class="card-desc" data-i18n="proj1-desc">Dashboard interativo de análise de ingressos construído com Streamlit. Visualização de vendas, receita e dados de público para eventos ao vivo.</p>
+        <div class="card-footer">
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">Data Viz</span>
+          </div>
+          <a href="https://github.com/gbaida/shotgun-dashboard" target="_blank" rel="noopener" class="card-link">↗ GitHub</a>
+        </div>
+      </div>
+
+      <div class="card fade-in">
+        <div class="card-header">
+          <span class="card-name mono">RelacaoPIBvsEmissoes</span>
+          <span class="badge badge--archived" data-i18n="badge-archived">arquivado</span>
+        </div>
+        <p class="card-desc" data-i18n="proj2-desc">Análise econométrica da relação entre PIB e emissões de gases de efeito estufa. Estudo de dados ambientais com Python e Jupyter.</p>
+        <div class="card-footer">
+          <div class="tags">
+            <span class="tag">Jupyter</span>
+            <span class="tag">Econometria</span>
+          </div>
+          <a href="https://github.com/gbaida/RelacaoPIBvsEmissoes" target="_blank" rel="noopener" class="card-link">↗ GitHub</a>
+        </div>
+      </div>
+
+      <div class="card fade-in">
+        <div class="card-header">
+          <span class="card-name mono">ChallengeDados-Alura</span>
+          <span class="badge badge--archived" data-i18n="badge-archived">arquivado</span>
+        </div>
+        <p class="card-desc" data-i18n="proj3-desc">Modelo de classificação em machine learning aplicado a dados de uma empresa de telecomunicações. Projeto de 4 semanas da plataforma Alura.</p>
+        <div class="card-footer">
+          <div class="tags">
+            <span class="tag">ML</span>
+            <span class="tag">scikit-learn</span>
+          </div>
+          <a href="https://github.com/gbaida/ChallengeDados-Alura" target="_blank" rel="noopener" class="card-link">↗ GitHub</a>
+        </div>
+      </div>
+
+      <div class="card fade-in">
+        <div class="card-header">
+          <span class="card-name mono">TwitterUrnaEletronica</span>
+          <span class="badge badge--archived" data-i18n="badge-archived">arquivado</span>
+        </div>
+        <p class="card-desc" data-i18n="proj4-desc">Análise de NLP do debate em torno da urna eletrônica no Twitter. Mapeamento de sentimento e volume de discussão em período eleitoral.</p>
+        <div class="card-footer">
+          <div class="tags">
+            <span class="tag">NLP</span>
+            <span class="tag">Python</span>
+          </div>
+          <a href="https://github.com/gbaida/TwitterUrnaEletronica" target="_blank" rel="noopener" class="card-link">↗ GitHub</a>
+        </div>
+      </div>
+
+      <div class="card fade-in">
+        <div class="card-header">
+          <span class="card-name mono">AnaliseDesigualdadesEnem</span>
+          <span class="badge badge--archived" data-i18n="badge-archived">arquivado</span>
+        </div>
+        <p class="card-desc" data-i18n="proj5-desc">Análise do impacto de desigualdades socioeconômicas no desempenho de alunos no ENEM 2021. Estudo com dados do INEP.</p>
+        <div class="card-footer">
+          <div class="tags">
+            <span class="tag">Pandas</span>
+            <span class="tag">Estatística</span>
+          </div>
+          <a href="https://github.com/gbaida/AnaliseDesigualdadesEnem2021" target="_blank" rel="noopener" class="card-link">↗ GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROFILE -->
+  <section id="perfil" class="section">
+    <h2 class="section-label fade-in">
+      <span class="mono section-num">02</span>
+      <span data-i18n="nav2">perfil</span>
+    </h2>
+
+    <div class="skills-grid fade-in">
+      <div class="skill-group">
+        <h3 class="mono skill-heading" data-i18n="skill-data">dados</h3>
+        <ul>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>BigQuery</li>
+          <li>Pandas</li>
+          <li>scikit-learn</li>
+          <li>Jupyter</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3 class="mono skill-heading" data-i18n="skill-viz">visualização</h3>
+        <ul>
+          <li>Power BI</li>
+          <li>Streamlit</li>
+          <li>Tableau</li>
+          <li>Matplotlib</li>
+          <li>Looker</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3 class="mono skill-heading" data-i18n="skill-tools">ferramentas</h3>
+        <ul>
+          <li>dbt</li>
+          <li>Airflow</li>
+          <li>Git / GitHub</li>
+          <li>Claude / Agents</li>
+          <li>VS Code</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3 class="mono skill-heading" data-i18n="skill-cloud">cloud</h3>
+        <ul>
+          <li>Google Cloud</li>
+          <li>BigQuery</li>
+          <li>AWS</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="sobre" class="section">
+    <h2 class="section-label fade-in">
+      <span class="mono section-num">03</span>
+      <span data-i18n="nav3">sobre</span>
+    </h2>
+
+    <div class="about-inner fade-in">
+      <p class="bio" data-i18n="bio">
+        Analista de Dados Sênior com mais de 10 anos em TI, transformando dados complexos em decisões que ficam. Especializo em conectar dados brutos à estratégia de negócios — tornando os dados úteis, não apenas precisos. Construo dashboards, automatizo fluxos e comunico insights de formas que movem as pessoas a agir. Tão confortável em uma query SQL quanto apresentando resultados. Combino profundidade técnica em Python, BigQuery e Power BI com uma obsessão genuína por data storytelling. Atualmente experimento com Claude e agentes para construir ferramentas de dados.
+      </p>
+      <div class="contact-links">
+        <a href="https://github.com/gbaida" target="_blank" rel="noopener">↗ GitHub</a>
+        <a href="https://www.linkedin.com/in/gustavo-baida/" target="_blank" rel="noopener">↗ LinkedIn</a>
+        <a href="mailto:gustavobaida@gmail.com">↗ email</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="fade-in">
+    <span class="mono" data-i18n="footer">feito à mão — sem frameworks.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
