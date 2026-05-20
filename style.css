@@ -1,21 +1,24 @@
 :root {
-  --bg:          #f8f9fa;
-  --page-bg:     #ffffff;
-  --border:      #a2a9b1;
-  --border-light:#eaecf0;
-  --text:        #202122;
-  --text-muted:  #54595d;
-  --link:        #0645ad;
-  --link-visited:#0b0080;
-  --accent:      #3680b0;
-  --infobox-bg:  #f8f9fa;
-  --toc-bg:      #f8f9fa;
-  --heading-border: #a2a9b1;
-  --font-serif:  Georgia, 'Linux Libertine', 'Times New Roman', serif;
-  --font-title:  'Linux Libertine Display', Georgia, serif;
-  --font-ui:     -apple-system, 'Helvetica Neue', Arial, sans-serif;
-  --max-w:       960px;
-  --bar-h:       40px;
+  --bg:             #f8f9fa;
+  --page-bg:        #ffffff;
+  --border:         #a2a9b1;
+  --border-light:   #eaecf0;
+  --text:           #202122;
+  --text-muted:     #54595d;
+  --link:           #3366cc;
+  --link-visited:   #795cb2;
+  --infobox-bg:     #f8f9fa;
+  --infobox-head:   #cee0f2;
+  --toc-bg:         #f8f9fa;
+  --table-head:     #eaecf0;
+  --table-stripe:   #f8f9fa;
+  --notice-bg:      #eaf3fb;
+  --notice-border:  #a2c5e5;
+  --font-serif:     Georgia, 'Times New Roman', serif;
+  --font-title:     Georgia, serif;
+  --font-ui:        -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --max-w:          960px;
+  --bar-h:          40px;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -107,8 +110,8 @@ body {
 
 .wiki-notice {
   display: inline-block;
-  background: #eaf3fb;
-  border: 1px solid #a2c5e5;
+  background: var(--notice-bg);
+  border: 1px solid var(--notice-border);
   padding: 0.35rem 0.75rem;
   font-size: 0.8rem;
   color: var(--text-muted);
@@ -132,19 +135,20 @@ body {
 }
 
 .infobox-title {
-  background: var(--accent);
-  color: #fff;
+  background: var(--infobox-head);
+  color: var(--text);
   text-align: center;
   font-weight: bold;
   padding: 0.4rem 0.75rem;
   font-family: var(--font-ui);
   font-size: 0.9rem;
+  border-bottom: 1px solid var(--border);
 }
 
 .infobox-subtitle {
   text-align: center;
   padding: 0.35rem 0.75rem;
-  background: #dce6f0;
+  background: var(--infobox-head);
   font-size: 0.8rem;
   color: var(--text-muted);
   font-style: italic;
@@ -251,15 +255,28 @@ section p {
 
 .edit-link:hover { color: var(--link); }
 
-/* === PROJECT ENTRIES === */
-.project-entry {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--border-light);
+/* === PROJECT TABLE === */
+.proj-table { max-width: 100%; }
+
+.proj-table td, .proj-table th { vertical-align: middle; }
+
+.proj-name {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
-.project-entry:last-child {
-  border-bottom: none;
+.proj-tech {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.proj-links-cell {
+  font-size: 0.82rem;
+  white-space: nowrap;
+  line-height: 1.8;
 }
 
 .proj-badge {
@@ -316,7 +333,7 @@ section p {
 }
 
 .wiki-table th {
-  background: #eaecf0;
+  background: var(--table-head);
   border: 1px solid var(--border);
   padding: 0.4rem 0.75rem;
   text-align: left;
@@ -330,7 +347,7 @@ section p {
   vertical-align: top;
 }
 
-.wiki-table tr:nth-child(even) td { background: #f8f9fa; }
+.wiki-table tr:nth-child(even) td { background: var(--table-stripe); }
 
 /* === LINKS === */
 a {
