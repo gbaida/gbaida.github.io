@@ -17,8 +17,8 @@
   --accent:       #a5c0ce;
   --accent-warm:  #c9b0ab;
   --green:        #7abfa3;
-  --font-body:    'Inter', system-ui, sans-serif;
-  --font-mono:    'JetBrains Mono', 'Courier New', monospace;
+  --font-body:    'Space Grotesk', system-ui, sans-serif;
+  --font-mono:    'Space Mono', 'Courier New', monospace;
   --max-w:        860px;
   --nav-h:        60px;
 }
@@ -255,6 +255,11 @@ h1 {
   border: 1px solid rgba(165, 192, 206, 0.2);
   padding: 0.15rem 0.5rem;
   border-radius: 4px;
+}
+
+.card-links {
+  display: flex;
+  gap: 1rem;
 }
 
 .card-link {
