@@ -2,9 +2,7 @@ const translations = {
   pt: {
     'nav1':          'projetos',
     'nav2':          'perfil',
-    'nav3':          'sobre',
     'tagline':       'analista de dados sênior — transformando dados em decisões que ficam.',
-    'status':        'disponível para oportunidades',
     'badge-active':  'ativo',
     'badge-archived':'arquivado',
     'proj1-desc':    'Dashboard interativo de análise de ingressos construído com Streamlit. Visualização de vendas, receita e dados de público para eventos ao vivo.',
@@ -22,9 +20,7 @@ const translations = {
   en: {
     'nav1':          'projects',
     'nav2':          'profile',
-    'nav3':          'about',
     'tagline':       'senior data analyst — turning complex data into decisions that stick.',
-    'status':        'open to opportunities',
     'badge-active':  'active',
     'badge-archived':'archived',
     'proj1-desc':    'Interactive ticket analytics dashboard built with Streamlit. Real-time visualization of sales, revenue, and audience data for live events.',
